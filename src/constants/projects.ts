@@ -1,9 +1,21 @@
 import type { IconType } from "react-icons/lib";
 import checking from "assets/projects/Checking.png";
+import CryptoDashboard from "assets/projects/CryptoDashboard.png";
+import DiceGame from "assets/projects/DiceGame.png";
+import WeatherApp from "assets/projects/WeatherApp.png";
+import TipCalculator from "assets/projects/TipCalculator.png";
+import Esarwa from "assets/projects/Esarwa.png";
+import Calculator from "assets/projects/Calculator.png"
+import ProductSearch from "assets/projects/ProductSearchFilter.png"
 import OldPortfolioUrl from "assets/projects/old-portfolio.png?url";
 import SpotifyNext13Url from "assets/projects/spotify_next13.png?url";
 import TheLabzUrl from "assets/projects/the-labz.jpg?url";
 import TwitterCloneUrl from "assets/projects/twitter-clone.png?url";
+import HTMLICON from "icons/HtmlIcon";
+import CssIcon from "icons/CssIcon";
+import JavascriptIcon from "icons/JavascriptIcon";
+import BootstrapIcon from "icons/BootstrapIcon";
+import ChakraIcon from "icons/ChakraIcon";
 import AirtableIcon from "icons/AirtableIcon";
 import AwsIcon from "icons/AwsIcon";
 import BuildIcon from "icons/BuildIcon";
@@ -42,7 +54,7 @@ const techTypes = [
 
 type TechTuple = typeof techTypes;
 
-export type ProjectTech = { tech: TechTuple[number]; icon: IconType };
+export type ProjectTech = { tech: any; icon: IconType };
 
 export type Project = {
   title: string;
@@ -53,7 +65,11 @@ export type Project = {
   techs: ProjectTech[];
   isPinned?: boolean;
 };
-
+const HTML: ProjectTech = { tech: "HTML", icon: HTMLICON };
+const Css: ProjectTech = { tech: "CSS", icon: CssIcon };
+const Javascript: ProjectTech = { tech: "Javascript", icon: JavascriptIcon };
+const Bootstrap: ProjectTech = { tech: "Bootstrap", icon: BootstrapIcon };
+const Chakra: ProjectTech = { tech: "Chaktra", icon: ChakraIcon };
 const nextjsTech: ProjectTech = { tech: "Next.js", icon: NextjsIcon };
 const typeScriptTech: ProjectTech = { tech: "TypeScript", icon: TypescriptIcon };
 const prismaTech: ProjectTech = { tech: "Prisma", icon: PrismaIcon };
@@ -67,6 +83,7 @@ const airtableTech: ProjectTech = { tech: "Airtable", icon: AirtableIcon };
 const awsTech: ProjectTech = { tech: "AWS", icon: AwsIcon };
 const craftjsTech: ProjectTech = { tech: "@craftjs/core", icon: BuildIcon };
 const tailwindCssTech: ProjectTech = { tech: "Tailwind CSS", icon: TailwindIcon };
+const reactJS: ProjectTech = { tech: "React", icon: TailwindIcon };
 const trpcTech: ProjectTech = { tech: "tRPC", icon: trpcIcon };
 const graphqlTech: ProjectTech = { tech: "GraphQL", icon: GraphqlIcon };
 const typeGraphqlTech: ProjectTech = { tech: "TypeGraphQL", icon: GraphqlIcon };
@@ -75,59 +92,72 @@ const typeGraphqlTech: ProjectTech = { tech: "TypeGraphQL", icon: GraphqlIcon };
 
 export const projects: Project[] = [
   {
-    title: "Twitter Clone",
+    title: "Crypto Dashboard",
     description:
-      "As in the title, it is the Twitter clone 😄\n Responsive website with basic features.",
-    image: checking,
+      "Cryptocurrency dashboard using React, where I explored and learned about Chakra UI, the functionality of React components, and how to implement navigation using React Router DOM.",
+    image: CryptoDashboard,
     url: "https://twitter-clone-nextjs-coral.vercel.app",
     githubUrl: "https://github.com/adrianpiatek99/twitter-clone-nextjs",
     techs: [
-      nextjsTech,
-      typeScriptTech,
-      trpcTech,
-      prismaTech,
-      testTech,
-      styledComponentsTech,
-      tanStackQueryTech
+      reactTech,
+      Chakra,
+      Javascript
     ],
     isPinned: true
   },
   {
-    title: "The Labz",
+    title: "Dice Game",
     description:
-      "The project that I have been working in my previous job.\n The Labz platform gives creatives a robust multi-media toolbox from which they can mix and match audio, video, text, links, images, video chat, and more to curate a unique and dynamic experiences.",
-    image: TheLabzUrl,
+      "Dice game in React where players choose a number, and the game generates a random number automatically. If the chosen number matches the generated number, the player earns a point.",
+    image: DiceGame,
     url: "https://www.thelabz.com",
     techs: [
-      nextjsTech,
-      typeScriptTech,
-      awsTech,
-      airtableTech,
-      prismaTech,
-      craftjsTech,
-      reduxTech,
-      testTech,
-      storybookTech,
-      styledComponentsTech
+      reactTech,
+      styledComponentsTech,
+      Javascript
     ],
     isPinned: true
   },
   {
-    title: "Spotify Next.js 13",
+    title: "Esarwa",
     description:
-      "I am trying to build Spotify with basic features.\n Basically, I build it because I want to check Next.js 13 app directory and master GraphQL with TypeGraphQL. Currently, you will find here only sign-in and sign-up functionality.",
-    image: SpotifyNext13Url,
+      "I designed a website UI called Esarwa using HTML, CSS, and Bootstrap. Through this project, I learned how to integrate built-in Bootstrap components into my website and gained valuable experience in styling using Bootstrap.",
+    image: Esarwa,
     url: "https://spotify-nextjs13-graphql-tailwindcss.vercel.app/login",
     githubUrl: "https://github.com/adrianpiatek99/spotify-nextjs13-graphql-tailwindcss",
-    techs: [nextjsTech, typeScriptTech, graphqlTech, typeGraphqlTech, prismaTech, tailwindCssTech],
+    techs: [HTML, Css, Javascript, Bootstrap,],
     isPinned: true
   },
   {
-    title: "Old portfolio",
-    description: "Old portfolio that contains old projects.",
-    image: OldPortfolioUrl,
+    title: "WeatherApp",
+    description: "I created a weather app using HTML, CSS, and JavaScript that displays the weather of any city based on a search. Through this project, I learned about APIs, how to fetch data from them, and how to display the retrieved information dynamically.",
+    image: WeatherApp,
     url: "https://portfolio-adrian-piatek.vercel.app",
     githubUrl: "https://github.com/adrianpiatek99/portfolio-nextjs",
-    techs: [reactTech, typeScriptTech, styledComponentsTech]
+    techs: [HTML, Css, Javascript,]
+  },
+  {
+    title: "Calculator",
+    description: "I developed a calculator using HTML, CSS, and JavaScript. Through this project, I learned about built-in JavaScript functions, event handling, and how to implement interactive features.",
+    image: Calculator,
+    url: "https://portfolio-adrian-piatek.vercel.app",
+    githubUrl: "https://github.com/adrianpiatek99/portfolio-nextjs",
+    techs: [HTML, Css, Javascript,]
+  },
+  {
+    title: "Tip Calculator",
+    description: "I created a Tip Calculator using HTML, CSS, and JavaScript. This project calculates the tip amount based on the customer's input. Through this, I gained a better understanding of DOM manipulation and how to create interactive web applications.",
+    image: TipCalculator,
+    url: "https://portfolio-adrian-piatek.vercel.app",
+    githubUrl: "https://github.com/adrianpiatek99/portfolio-nextjs",
+    techs: [HTML, Css, Javascript,]
+  },
+  {
+    title: "Product Search Filter",
+    description: "I developed a Product Filtering page using HTML, CSS, and JavaScript. This project filters products dynamically based on the user's search input. Through this, I learned about the JavaScript filter() method and how to implement it for interactive functionality.",
+    image: ProductSearch,
+    url: "https://portfolio-adrian-piatek.vercel.app",
+    githubUrl: "https://github.com/adrianpiatek99/portfolio-nextjs",
+    techs: [HTML, Css, Javascript,]
   }
 ];
