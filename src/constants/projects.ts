@@ -96,8 +96,8 @@ export const projects: Project[] = [
     description:
       "Cryptocurrency dashboard using React, where I explored and learned about Chakra UI, the functionality of React components, and how to implement navigation using React Router DOM.",
     image: CryptoDashboard,
-    url: "https://twitter-clone-nextjs-coral.vercel.app",
-    githubUrl: "https://github.com/adrianpiatek99/twitter-clone-nextjs",
+    url: "#",
+    githubUrl: "#",
     techs: [
       reactTech,
       Chakra,
@@ -110,7 +110,7 @@ export const projects: Project[] = [
     description:
       "Dice game in React where players choose a number, and the game generates a random number automatically. If the chosen number matches the generated number, the player earns a point.",
     image: DiceGame,
-    url: "https://www.thelabz.com",
+    url: "#",
     techs: [
       reactTech,
       styledComponentsTech,
@@ -123,7 +123,7 @@ export const projects: Project[] = [
     description:
       "I designed a website UI called Esarwa using HTML, CSS, and Bootstrap. Through this project, I learned how to integrate built-in Bootstrap components into my website and gained valuable experience in styling using Bootstrap.",
     image: Esarwa,
-    url: "https://spotify-nextjs13-graphql-tailwindcss.vercel.app/login",
+    url: "#",
     githubUrl: "https://github.com/adrianpiatek99/spotify-nextjs13-graphql-tailwindcss",
     techs: [HTML, Css, Javascript, Bootstrap,],
     isPinned: true
@@ -132,32 +132,32 @@ export const projects: Project[] = [
     title: "WeatherApp",
     description: "I created a weather app using HTML, CSS, and JavaScript that displays the weather of any city based on a search. Through this project, I learned about APIs, how to fetch data from them, and how to display the retrieved information dynamically.",
     image: WeatherApp,
-    url: "https://portfolio-adrian-piatek.vercel.app",
-    githubUrl: "https://github.com/adrianpiatek99/portfolio-nextjs",
+    url: "#",
+    githubUrl: "#",
     techs: [HTML, Css, Javascript,]
   },
   {
     title: "Calculator",
     description: "I developed a calculator using HTML, CSS, and JavaScript. Through this project, I learned about built-in JavaScript functions, event handling, and how to implement interactive features.",
     image: Calculator,
-    url: "https://portfolio-adrian-piatek.vercel.app",
-    githubUrl: "https://github.com/adrianpiatek99/portfolio-nextjs",
+    url: "#",
+    githubUrl: "#",
     techs: [HTML, Css, Javascript,]
   },
   {
     title: "Tip Calculator",
     description: "I created a Tip Calculator using HTML, CSS, and JavaScript. This project calculates the tip amount based on the customer's input. Through this, I gained a better understanding of DOM manipulation and how to create interactive web applications.",
     image: TipCalculator,
-    url: "https://portfolio-adrian-piatek.vercel.app",
-    githubUrl: "https://github.com/adrianpiatek99/portfolio-nextjs",
+    url: "#",
+    githubUrl: "#",
     techs: [HTML, Css, Javascript,]
   },
   {
     title: "Product Search Filter",
     description: "I developed a Product Filtering page using HTML, CSS, and JavaScript. This project filters products dynamically based on the user's search input. Through this, I learned about the JavaScript filter() method and how to implement it for interactive functionality.",
     image: ProductSearch,
-    url: "https://portfolio-adrian-piatek.vercel.app",
-    githubUrl: "https://github.com/adrianpiatek99/portfolio-nextjs",
+    url: "#",
+    githubUrl: "#",
     techs: [HTML, Css, Javascript,]
   }
 ];
